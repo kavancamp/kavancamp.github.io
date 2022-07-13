@@ -7,22 +7,50 @@
     <title>Keenah's Portfolio Website</title>
     <script src="https://kit.fontawesome.com/55a0d11672.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <div>
-            <ul class="nav-links">
-                <li>Experience</li>
-                <li>Skills</li>
-                <li>Contact Me</li>
+        <nav>
+            <ul class="nav__list">
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#">Contact Me</a>
+                </li>
+                <!-- <li>
+                    <a>
+                        <label class="switch"><input type="checkbox" checked="">
+                            <span class="slider round"></span>
+                        </label>
+                    </a>
+                </li>-->
             </ul>
-        </div>
-        <div class="logo">
-            <i class="fa-solid fa-code"></i>
-        </div>
+            <div class="logo">
+                <i class="fa-solid fa-code"></i>
+            </div>
+        </nav>
     </header>
-    <main>
-
-    </main>
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hello everyone, I'm Keenah! 
+            <span class="wave-emoji"><img alt="👋" draggable="false" src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;"></span>
+        </h1>
+        <div class="social-media-div">
+            <a href="https://github.com/kavancamp" class="icon-button github" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github-square"></i><span></span></a>
+            <a href="https://www.linkedin.com/in/keenah-vancampenhout/" class="icon-button linkedin" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i><span></span></a>
+            <a href="mailto:kvancamp@mail.com" class="icon-button google" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-envelope"></i><span></span></a>
+            <a href="https://www.facebook.com/keenahvancampenhout" class="icon-button facebook" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook-square"></i><span></span></a>
+        </div>
+       
+    </section>
 </body>
 </html>
