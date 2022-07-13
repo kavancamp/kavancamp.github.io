@@ -1,0 +1,23 @@
+*{
+    
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav__list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.nav__list li{
+    padding-left: 10px;
+    font-size: 22px;
+    font-family: cursive;
+}
+.nav__list li a{
+    text-decoration: none;
+}
+
+
