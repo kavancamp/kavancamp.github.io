@@ -1,6 +1,7 @@
 *{
     
 }
+/* Navigation */
 nav{
     display: flex;
     flex-direction: row;
@@ -20,4 +21,44 @@ nav{
     text-decoration: none;
 }
 
+/* Intro Section*/
+.my-img{
+    height:300px;
+}
 
+
+
+/* Skills Section*/
+.software-skills-div ul{
+    display: flex;
+    list-style: none;
+}
+.dev-icons{
+    padding-left: 0;
+    list-style: none;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+.software-skill-inline {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+.software-skill-inline > p {
+    font-size: 10px;
+  }
+
+
+
+/* Projects Section */
+.repo-card-div {
+    color: #586069;
+    background-color: #fff;
+    box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
+    padding: 2rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
