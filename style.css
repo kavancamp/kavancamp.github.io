@@ -1,7 +1,8 @@
-*{
-    
+body{
+  
 }
 /* Navigation */
+
 nav{
     display: flex;
     flex-direction: row;
@@ -54,11 +55,37 @@ nav{
 
 
 /* Projects Section */
+
+h1 .title{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.project-title {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: normal;
+}
+.repo-cards-div-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap: 1rem 1rem;
+    gap: 1rem 1rem;
+}
 .repo-card-div {
-    color: #586069;
+    color: #30353a;
     background-color: #fff;
     box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
     padding: 2rem;
     cursor: pointer;
     transition: all .3s ease;
 }
+.repo-left-stat span, .repo-name-div {
+    display: flex;
+    align-items: center;
+}
+
