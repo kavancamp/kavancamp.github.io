@@ -1,89 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keenah's Portfolio Website</title>
-    <script src="https://kit.fontawesome.com/55a0d11672.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="nav__list">
-                <li>
-                    <a href="#skills-section">Skills</a>
-                </li>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-                <li>
-                    <a href="#reach-out">Reach-Out</a>
-                </li>
-                
-                <!-- <li>
-                    <a>
-                        <label class="switch"><input type="checkbox" checked="">
-                            <span class="slider round"></span>
-                        </label>
-                    </a>
-                </li>-->
-            </ul>
-        </nav>
-    
-    <section class="intro" id="home">
-        
-        <h1 class="section__title--intro">
-            Hello, I'm <strong>Keenah</strong>
-        </h1>
-        <p class="section__subtitle--intro">Full-Stack Software Engineer</p>
-        <img src="./assets/images/keenah.jpg" alt="An image of Keenah" class="my-img">
-    </section>
-</header>
-    <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">About Me</h2> 
-        
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Keenah's Portfolio Website</title>
+        <script src="https://kit.fontawesome.com/55a0d11672.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav__list">
+                    <li>
+                        <a href="#skills-section">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#social-media-div">Reach-Out</a>
+                    </li>
+                    
+                    <!-- <li>
+                        <a>
+                            <label class="switch"><input type="checkbox" checked="">
+                                <span class="slider round"></span>
+                            </label>
+                        </a>
+                    </li>-->
+                </ul>
+            </nav>
+     
+        <section class="intro" id="home">
+            <h1 class="section__title--intro">
+                Hello, I'm <strong>Keenah</strong>
+            </h1>
+            <p class="section__subtitle--intro">Full-Stack Software Engineer</p>
+            <img src="./assets/images/keenah.jpg" alt="An image of Keenah" class="my-img">
+        </section>
+    </header>  
 
+    <section class="about-me" id="about">
+        <h2 class="section__title--about">About Me</h2> 
+        <p class="section__subtitle--about">Engineer Based out of Wisconsin </p>
+        <img src="./assets/images/keenah2.JPG" class="about-me__img">
+        <div class="about-me__body">
+        For the last 8 years I have been working as a Control Room Operator, monitoring and controlling the flow of oil through pipelines via SCADA(Supervisory Control and Data Acquisition.) I started in this position with no experience what-so-ever in a Control Room let alone the Oilfield, and truly excelled in my position. My previous position allowed me the opportunity to work with SQL for two years, which I thoroughly enjoyed. 
+        </div>  
     </section>
     <section class="skills-section">
-        <h1 class="skills-title"><i class="fa-solid fa-laptop-code"></i> Skills: </h1>
         <div class="software-skills-div">
             <ul class="dev-icons">
                 <li class="software-skill-inline" name="html-5">
                 <i class="fab fa-html5"></i>
                 <p>html-5</p></li>
                 <li class="software-skill-inline" name="css3">
-                    <i class="fab fa-css3-alt"></i><p>css3</p></li>
+                    <i class="fab fa-css3-alt"></i>
+                    <p>css3</p>
+                </li>
                 <li class="software-skill-inline" name="JavaScript">
-                    <i class="fab fa-js"></i><p>JavaScript</p></li>
+                    <i class="fab fa-js"></i>
+                    <p>JavaScript</p>
+                </li>
                 <li class="software-skill-inline" name="reactjs">
-                    <i class="fab fa-react"></i><p>reactjs</p></li>
+                    <i class="fab fa-react"></i>
+                    <p>reactjs</p>
+                </li>
                 <li class="software-skill-inline" name="nodejs">
-                    <i class="fab fa-node"></i><p>nodejs</p></li>
+                    <i class="fab fa-node"></i>
+                    <p>nodejs</p>
+                </li>
                 <li class="software-skill-inline" name="npm">
-                    <i class="fab fa-npm"></i><p>npm</p></li>
+                    <i class="fab fa-npm"></i>
+                    <p>npm</p>
+                </li>
                 <li class="software-skill-inline" name="sql-database">
-                    <i class="fas fa-database"></i><p>sql-database</p></li>
+                    <i class="fas fa-database"></i>
+                    <p>sql-database</p>
+                </li>
                 <li class="software-skill-inline" name="aws">
                     <i class="fab fa-aws"></i>
                     <p>aws</p>
                 </li>
             </ul>
         </div>
-            
     </section>
-    <div class="projects" id="projects">
-        <h1 class="title">Projects</h1>
+    <section class="projects-section" id="projects">
+        <div class="section__title--projects">
+            <h1 class="title">Projects</h1>
+        </div>
     <div class="repo-cards-div-main"> 
-
         <div class="repo-card-div">
             <a href="#" class="portfolio">
                 <img src="" alt="" class="portfolio_item">
@@ -162,22 +176,29 @@
                 <span><p>JavaScript</p></span>
             </div>
         </div>
-
-     </div>
-   </div>         
-            <div class="project-button">
-                <a class="main-button" href="https://github.com/kavancamp" target="_blank">More</a>
-            </div>
+    </div>         
+    </section>      
     <footer>
-        <div class="social-media-div reach-out">
-            <a href="https://github.com/kavancamp" class="icon-button github" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-github-square"></i><span></span></a>
-            <a href="https://www.linkedin.com/in/keenah-vancampenhout/" class="icon-button linkedin" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-linkedin"></i><span></span></a>
-            <a href="mailto:kvancamp@mail.com" class="icon-button google" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-envelope"></i><span></span></a>
-            <a href="https://www.facebook.com/keenahvancampenhout" class="icon-button facebook" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-facebook-square"></i><span></span></a>
+        <div class="social-media-div">
+                <li class="social-item">    
+                    <a href="https://github.com/kavancamp" class="icon-button github" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github-square"></i><span></span></a>  
+                </li>
+                <li class="social-item">
+                    <a href="https://www.linkedin.com/in/keenah-vancampenhout/" class="icon-button linkedin" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i><span></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="mailto:kvancamp@mail.com" class="icon-button google" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-envelope"></i><span></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.facebook.com/keenahvancampenhout" class="icon-button facebook" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <span>
+                </span></a>
+                </li>
+            </ul>  
         </div>
     </footer>
 </body>
