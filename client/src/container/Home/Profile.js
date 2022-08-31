@@ -27,7 +27,7 @@ function Profile() {
             </span>
           </div>
           <div className="profile-details-role">
-            <span className="primary-text">
+            <div className="primary-text">
               <h1>
                 <Typical
                   loop={Infinity}
@@ -47,7 +47,7 @@ function Profile() {
                 Knack of building applications with front and back end blahblah
                 lorem ipsum
               </span>
-            </span>
+            </div>
           </div>
           <div className="profile-options">
             <button className="btn primary-btn">{""} Hire me </button>
@@ -57,8 +57,10 @@ function Profile() {
           </div>
         </div>
         <div className="profile-picture">
-          <img src="../../assets/IMG_2701.JPG" alt="Keenah" />
-          <div className="profile-picture-background"></div>
+          
+          <div className="profile-picture-background">
+
+          </div>
         </div>
       </div>
     </div>
