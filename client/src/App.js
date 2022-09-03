@@ -1,13 +1,13 @@
 import "./App.css";
-import React from 'react';
-import { About, Contact, Footer, Profile, Resume, Testimonial } from './container';
+import PortfolioContainer from "./container/PortfolioContainer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <div className="App">
-    
-      <Profile />
-     
+      <ToastContainer />
+      <PortfolioContainer />
     </div>
   );
 }
