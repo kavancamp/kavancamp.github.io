@@ -26,7 +26,10 @@
   overflow: hidden;
   padding: 0 0 0 80px;
 }
-
+.experience-container{
+  overflow: auto;
+  padding-top: 30px;
+}
 .experience-description {
   margin: 10px 0 0 0;
   text-align: justify;
@@ -95,8 +98,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 360px;
+  height: 350px;
   width: 100%;
+  overflow: auto;
 }
 
 .resume-heading {
