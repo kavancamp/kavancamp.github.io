@@ -3,7 +3,10 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
+import '../../assets/Resume/book-solid.svg'
 import index from "react-typical";
+
+
 
 const Resume = (props) => {
   /* STATES */
@@ -39,17 +42,38 @@ const Resume = (props) => {
         <div className="resume-heading-description">
           <span>{props.description ? props.description : ""}</span>
         </div>
+        <div className="github-link">
+          <span>{props.Link1 ? props.Link1 : ""}</span>
+        </div>
+        <div className="hosted-link">
+          <span>{props.Link2 ? props.Link2 : ""}</span>
+        </div>
       </div>
     );
   };
 
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
-    { label: "Work History", logoSrc: "work-history.svg" },
-    { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
-    { label: "Interests", logoSrc: "interests.svg" },
+    {
+      label: "Education",
+      //logoSrc: <FontAwesomeIcon icon="fa-solid fa-school" />,
+    },
+    {
+      label: "Work History",
+      //logoSrc: <FontAwesomeIcon icon="fa-solid fa-briefcase" />,
+    },
+    {
+      label: "Programming Skills",
+      //logoSrc: <FontAwesomeIcon icon="fa-solid fa-book-file"/>
+    },
+    {
+      label: "Projects",
+      logoSrc: "book-solid.svg",
+    },
+    {
+      label: "Interests",
+      //logoSrc: <FontAwesomeIcon icon="fa-solid fa-book-skull" />,
+    },
   ];
 
   //here we have
@@ -59,58 +83,98 @@ const Resume = (props) => {
     { skill: "React Native", ratingPercentage: 85 },
     { skill: "Express JS", ratingPercentage: 89 },
     { skill: "Node JS", ratingPercentage: 89 },
-    { skill: "Mongo Db", ratingPercentage: 70 },
-    { skill: "Core Java", ratingPercentage: 80 },
     { skill: "HTML", ratingPercentage: 80 },
     { skill: "CSS", ratingPercentage: 80 },
   ];
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+      title: "Netflix Clone",
+      duration: { fromDate: "2022", toDate: "2022" },
+      description: "A Streaming service clone utilizing imdb api.",
+      subHeading: "Technologies Used: React JS, Bootstrap",
+      Link1: (
+        <a
+          className="git-link"
+          href="https://github.com/kavancamp/netflix-clone"
+        >
+          Code
+        </a>
+      ),
+      Link2: (
+        <a
+          className="host-link"
+          href={"https://netflix-clone-9bab9.web.app"}
+          alt="B"
+        >
+          Hosted Site
+        </a>
+      ),
     },
     {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "An ecommerce application designed to sell products online wth payment system integration",
-      subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+      title: "Harry Potter Quote Generator",
+      duration: { fromDate: "2022", toDate: "2022" },
+      description: "A random quote generator with speech synthesis.",
+      subHeading: "Technologies Used: React JS",
+      Link1: (
+        <a
+          className="git-link"
+          href="https://github.com/kavancamp/harry-potter-quote-generator"
+        >
+          Code
+        </a>
+      ),
+      Link2: (
+        <a
+          className="host-link"
+          href="https://kavancamp.github.io/harry-potter-quote-generator"
+        >
+          Hosted Site
+        </a>
+      ),
     },
     {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Amazon Clone",
+      duration: { fromDate: "2022", toDate: "2022" },
       description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+        "Online ecommerce website for showcasing and selling products onlne with Stripe payment system integration",
       subHeading:
         "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+      Link1: (
+        <a
+          className="git-link"
+          href="https://github.com/kavancamp/amazon-clone"
+        >
+          Code
+        </a>
+      ),
+      Link2: (
+        <a className="host-link" href="https://clone-946c0.web.app/">
+          Hosted Site
+        </a>
+      ),
     },
   ];
 
   const resumeDetails = [
-    <div className="resume-screen-container" key="education">
+    <div className="resume-screen-container education" key="education">
       <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
-      />
-
-      <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
+        heading={"CodeCademy"}
+        subHeading={"Full-Stack Software Engineering -JS focus"}
+        fromDate={"2021"}
+        toDate={"2022"}
       />
       <ResumeHeading
-        heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
+        heading={"PennFoster Career School"}
+        subHeading={"Highschool Diploma"}
         fromDate={"2007"}
-        toDate={"2012"}
+        toDate={"2009"}
+      />
+      <ResumeHeading
+        heading={"Codecademy"}
+        subHeading={"API Development with Swagger and OpenAPI Certificate"}
+        fromDate={"2022"}
+        toDate={"2022"}
       />
     </div>,
 
@@ -118,33 +182,76 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Ehizeex Technoloy"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
+          heading={"Control Room Operator"}
+          subHeading={"Vestas Americas"}
           fromDate={"2021"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
+            • Performed advanced-level wind turbine remote operations and
+            support. <br />
+            • Proficient troubleshooting and use of diagnostic tools. <br />
+            • SCADA analysis
+            <br />
           </span>
         </div>
+        <ResumeHeading
+          heading={"Network Operations Center Engineer"}
+          subHeading={"Source Global"}
+          fromDate={"2020"}
+          toDate={"2021"}
+        />
         <div className="experience-description">
           <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
+            • Monitored and analyzed data to determine root cause analysis;
+            Maintain utmost data integrity <br />
+            • Provided technical support to SOURCE Global customer base and
+            Field Engineers <br />
+            • Ran SQL queries and compiled necessary data.
+            <br />
+            <br />
           </span>
           <br />
+        </div>
+        <ResumeHeading
+          heading={"O&M Tech IV"}
+          subHeading={"Enable Midstream"}
+          fromDate={"2018"}
+          toDate={"2020"}
+        />
+        <div className="experience-description">
           <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
+            • Monitored SCADA system, changed pump and delivery schedules to
+            maintain product quality, safe operating conditions and
+            cost-efficient operations.
+            <br />
+            • Examined equipment daily, adjusted monitoring controls to maintain
+            safety standards.
+            <br />
+            • Logged hourly pressures and flows.
+            <br />
           </span>
-          <br />
+        </div>
+        <br />
+        <ResumeHeading
+          heading={"Control Room Operator"}
+          subHeading={"BakkenLink-Marathon Petroleum "}
+          fromDate={"2014"}
+          toDate={"2018"}
+        />
+        <div className="experience-description">
           <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
+            • Troubleshooting SQL queries and reports, SCADA Database and
+            graphic work.
+            <br />
+            • Monitored and adjusted flows to maintain pressures through the
+            lines, as well as meet daily quotas, via our SCADA system.
+            <br />
+            • Tracked and recorded status of operational systems using
+            applicable journals and control system tools.
+            <br />
           </span>
-          <br />
         </div>
       </div>
     </div>,
@@ -169,15 +276,17 @@ const Resume = (props) => {
     </div>,
 
     /* PROJECTS */
-    <div className="resume-screen-container" key="projects">
+    <div className="resume-screen-container projects" key="projects">
       {projectsDetails.map((projectsDetails, index) => (
         <ResumeHeading
           key={index}
           heading={projectsDetails.title}
           subHeading={projectsDetails.subHeading}
           description={projectsDetails.description}
-          fromDate={projectsDetails.duration.fromDate}
-          toDate={projectsDetails.duration.toDate}
+          /*fromDate={projectsDetails.duration.fromDate}
+          toDate={projectsDetails.duration.toDate}*/
+          Link1={projectsDetails.Link1}
+          Link2={projectsDetails.Link2}
         />
       ))}
     </div>,
@@ -185,16 +294,12 @@ const Resume = (props) => {
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Teaching"
-        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
+        heading="Reading"
+        description="Apart from being a coder, I use my love of learning to read as much as I can, anything from A Thousand Splendid Suns by Khaled Housenni, to the ACOTAR series by Sara J. Maas."
       />
       <ResumeHeading
-        heading="Music"
-        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
-      />
-      <ResumeHeading
-        heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
+        heading="Fitness"
+        description="Listening to music while lifting weights is something I can never compromise with, and often it's the best stress reliever that I can get my hands on."
       />
     </div>,
   ];
@@ -219,10 +324,10 @@ const Resume = (props) => {
         }
         key={index}
       >
-        <img
+       <img
           className="bullet-logo"
-          src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
-          alt="B"
+          src={`${bullet.logoSrc}`}
+          alt=""
         />
         <span className="bullet-label">{bullet.label}</span>
       </div>
