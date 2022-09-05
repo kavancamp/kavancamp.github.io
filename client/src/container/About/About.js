@@ -14,28 +14,28 @@ export default function About(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-    "Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.",
+      "Full-Stack Engineer with knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with ready to be an asset for an organization.",
     highlights: {
       bullets: [
         "Full Stack web and mobile development",
-        "Interactive Front End as per the design",
-        "React and React Native",
+        "Interactive Front End",
+        "React",
         "Redux for State Mnanagement",
         "Building REST API",
-        "Managing database",
+        "Managing databases",
       ],
       heading: "Here are a Few Highlights:",
     },
   };
 
-const renderHighlight = () => {
-  return SCREEN_CONSTSANTS.highlights.bullets.map((value, i) => (
-    <div className="highlight" key={i}>
-      <div className="highlight-blob"></div>
-      <span>{value}</span>
-    </div>
-  ));
-};
+  const renderHighlight = () => {
+    return SCREEN_CONSTSANTS.highlights.bullets.map((value, i) => (
+      <div className="highlight" key={i}>
+        <div className="highlight-blob"></div>
+        <span>{value}</span>
+      </div>
+    ));
+  };
 
   return (
     <div
