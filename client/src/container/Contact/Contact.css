@@ -19,12 +19,13 @@
   color: #fff;
   font-family: "Poppins Bold";
   letter-spacing: 0.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .back-form {
   max-width: 380px;
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 .back-form {
