@@ -9,9 +9,10 @@
 
 .resume-card {
   display: flex;
-  height: 360px;
+  height: 350px;
   width: 1000px;
   /* margin: 80px 0; */
+  overflow: scroll;
 }
 
 .resume-bullets {
@@ -24,11 +25,11 @@
   flex-grow: 1;
   width: 600px;
   overflow: hidden;
-  padding: 0 0 0 80px;
+  padding: 0 0 0 40px;
 }
-.experience-container{
+
+.experience-container {
   overflow: auto;
-  padding-top: 30px;
 }
 .experience-description {
   margin: 10px 0 0 0;
@@ -79,6 +80,7 @@
 .bullet-logo {
   height: 16px;
   margin: 0 30px 0 0;
+  color: white;
 }
 
 .bullet-icons {
@@ -100,26 +102,33 @@
   justify-content: space-evenly;
   height: 350px;
   width: 100%;
-  overflow: auto;
 }
-
+.projects {
+  overflow: auto;
+  padding-top: 80px;
+}
 .resume-heading {
   display: flex;
   flex-direction: column;
 }
-
 .resume-main-heading {
   position: relative;
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
 }
 
 .resume-main-heading span {
-  color: rgb(205,122, 0);;
-  font-size: 16px;
+  color: rgb(205, 122, 0);
+  font-size: 18px;
   font-family: "Poppins SemiBold";
 }
-
+.git-link,
+.host-link {
+  text-decoration: none;
+  color: #1f2235;
+  font-size: 12px;
+}
 .experience-description {
   max-width: 100%;
 }
@@ -131,7 +140,7 @@
   width: 15px;
   top: 5px;
   border-radius: 50%;
-  background-color: rgb(205,122, 0);
+  background-color: rgb(205, 122, 0);
 }
 
 .resume-sub-heading {
@@ -147,7 +156,7 @@
 }
 
 .heading-date {
-  background-color: rgb(205,122, 0);
+  background-color: rgb(205, 122, 0);
   padding: 4px 12px;
   font-size: 14px;
   border-radius: 14px;
@@ -167,13 +176,15 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  height: 370px;
+  overflow: auto;
 }
 
 .skill-percentage {
   position: relative;
   height: 15px;
   width: 70%;
-  background-color: rgb(205,122, 0);
+  background-color: rgb(205, 122, 0);
 }
 
 .skill-percentage .active-percentage-bar {
@@ -186,7 +197,7 @@
 .skill-parent span {
   font-family: "Poppins Bold";
   font-size: 16px;
-  color: rgb(205,122, 0);
+  color: rgb(205, 122, 0);
 }
 
 /* IPAD PRO RESPONSIVENESS */
@@ -194,9 +205,15 @@
   .resume-card {
     width: 880px;
   }
-
-  .resume-bullet-details {
-    padding: 0 0 0 70px;
+  .education {
+    padding: 60px 0 70px 0;
+    overflow: scroll;
+  }
+  .projects {
+    padding-top: 70px;
+  }
+  .experience-container {
+    overflow: auto;
   }
 }
 
@@ -234,5 +251,17 @@
 
   .selected-bullet {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 466px) {
+  .projects {
+    margin-top: 10px;
+    padding-top: 100px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .projects {
+    margin-top: 10px;
+    padding-top: 200px;
   }
 }
