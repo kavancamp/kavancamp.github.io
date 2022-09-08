@@ -3,7 +3,6 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
-import '../../assets/Resume/book-solid.svg'
 import index from "react-typical";
 
 
@@ -56,23 +55,18 @@ const Resume = (props) => {
   const resumeBullets = [
     {
       label: "Education",
-      //logoSrc: <FontAwesomeIcon icon="fa-solid fa-school" />,
     },
     {
       label: "Work History",
-      //logoSrc: <FontAwesomeIcon icon="fa-solid fa-briefcase" />,
     },
     {
       label: "Programming Skills",
-      //logoSrc: <FontAwesomeIcon icon="fa-solid fa-book-file"/>
     },
     {
       label: "Projects",
-      logoSrc: "book-solid.svg",
     },
     {
       label: "Interests",
-      //logoSrc: <FontAwesomeIcon icon="fa-solid fa-book-skull" />,
     },
   ];
 
@@ -324,11 +318,7 @@ const Resume = (props) => {
         }
         key={index}
       >
-       <img
-          className="bullet-logo"
-          src={`${bullet.logoSrc}`}
-          alt=""
-        />
+     
         <span className="bullet-label">{bullet.label}</span>
       </div>
     ));
@@ -362,7 +352,7 @@ const Resume = (props) => {
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">
-              <div className="bullet-icons"></div>
+              <div className="bullet-bar"></div>
               <div className="bullets">{getBullets()}</div>
             </div>
           </div>
