@@ -1,2 +1,0 @@
-# kvc_portfolio
- 
