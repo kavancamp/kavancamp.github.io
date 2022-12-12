@@ -49,7 +49,9 @@ function Profile() {
             </div>
           </div>
           <div className="profile-options">
-            <button className="btn primary-btn"> Hire me </button>
+            <a href="#contact-form">
+              <button className="btn primary-btn"> Hire me </button>
+            </a>
             <a href="./Kvc_portfolio.pdf" download>
               <button className="btn highlighted-btn">Download Resume</button>
             </a>
