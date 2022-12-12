@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import Typical from "react-typical";
-import axios from "axios";
 import { toast } from "react-toastify";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
@@ -14,7 +13,7 @@ export default function Contact(props) {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-
+  // eslint-disable-next-line
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
@@ -22,6 +21,7 @@ export default function Contact(props) {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [banner, setBanner] = useState("");
+  // eslint-disable-next-line
   const [bool, setBool] = useState(false);
 
   const handleName = (e) => {
@@ -37,6 +37,7 @@ export default function Contact(props) {
   const form = useRef();
 
   const submitForm = (e) => {
+    // eslint-disable-next-line
     let data = { name, email, message };
     setBool(true);
     e.preventDefault();
@@ -61,7 +62,7 @@ export default function Contact(props) {
           console.log("FAILED...", error);
         }
       );
-  }
+  };
 
   return (
     <div className="main-container fade-in" id={props.id || ""}>
