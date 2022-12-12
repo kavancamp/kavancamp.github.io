@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
@@ -9,22 +9,23 @@ export default function About(props) {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
+  // eslint-disable-next-line
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTSANTS = {
     description:
-      "Full-Stack Engineer with knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with ready to be an asset for an organization.",
+      "Full-Stack Engineer with knowledge of MERN stacks with redux, a knack of building applications with utmost efficiency. Strong professional, ready to be an asset for an organization.",
     highlights: {
       bullets: [
         "Full Stack web and mobile development",
         "Interactive Front End",
         "React",
-        "Redux for State Mnanagement",
-        "Building REST API",
+        "Redux for State Management",
+        "REST API",
         "Managing databases",
       ],
-      heading: "Here are a Few Highlights:",
+      heading: "A Few Highlights:",
     },
   };
 
@@ -57,7 +58,7 @@ export default function About(props) {
               {renderHighlight()}
             </div>
             <div className="about-options">
-              <a href="Profile (4).pdf" download="Profile (4).pdf">
+              <a href="./Kvc_portfolio.pdf" download>
                 <button className="btn highlighted-btn">Download Resume</button>
               </a>
             </div>
