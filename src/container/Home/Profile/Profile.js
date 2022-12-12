@@ -32,33 +32,31 @@ function Profile() {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Engthusiastic Dev 🧙🏻‍♀️",
+                    "Passionate Dev 🧙🏻‍♀️",
                     1000,
                     "Full Stack Developer 🤖",
                     1000,
                     "MERN Stack Dev 👩🏼‍💻",
                     1000,
-                    "React/React Native Dev 🫀",
+                    "React Dev 🫀",
                     1000,
                   ]}
                 />
               </h1>
               <span className="profile-role-tagline">
-                Knack of building applications with front and back end blahblah
-                lorem ipsum
+                A Full-Stack Developer with a focus on JavaScript and React.
               </span>
             </div>
           </div>
           <div className="profile-options">
             <button className="btn primary-btn"> Hire me </button>
-            <a href="Profile (4).pdf" download="Profile (4).pdf">
+            <a href="./Kvc_portfolio.pdf" download>
               <button className="btn highlighted-btn">Download Resume</button>
             </a>
           </div>
         </div>
         <div className="profile-picture">
-          <div className="profile-picture-background">
-          </div>
+          <div className="profile-picture-background"></div>
         </div>
       </div>
     </div>
