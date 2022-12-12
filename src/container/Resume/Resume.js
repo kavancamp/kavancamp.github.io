@@ -3,9 +3,8 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
+// eslint-disable-next-line
 import index from "react-typical";
-
-
 
 const Resume = (props) => {
   /* STATES */
@@ -72,13 +71,14 @@ const Resume = (props) => {
 
   //here we have
   const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 85 },
-    { skill: "React JS", ratingPercentage: 85 },
-    { skill: "React Native", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
-    { skill: "Node JS", ratingPercentage: 89 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
+    { skill: "JavaScript", ratingPercentage: 60 },
+    { skill: "React JS", ratingPercentage: 60 },
+    { skill: "SQL", ratingPercentage: 50 },
+    { skill: "Express JS", ratingPercentage: 60 },
+    { skill: "Node JS", ratingPercentage: 60 },
+    { skill: "HTML", ratingPercentage: 65 },
+    { skill: "CSS", ratingPercentage: 65 },
+    { skill: "AWS", ratingPercentage: 20 },
   ];
 
   const projectsDetails = [
@@ -289,7 +289,7 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
         heading="Reading"
-        description="Apart from being a coder, I use my love of learning to read as much as I can, anything from A Thousand Splendid Suns by Khaled Housenni, to the ACOTAR series by Sara J. Maas."
+        description="Apart from being a coder, I use my love of learning to read as much as I can, anything from A Thousand Splendid Suns by Khaled Hosseini, to the ACOTAR series by Sara J. Maas."
       />
       <ResumeHeading
         heading="Fitness"
@@ -318,7 +318,6 @@ const Resume = (props) => {
         }
         key={index}
       >
-     
         <span className="bullet-label">{bullet.label}</span>
       </div>
     ));
