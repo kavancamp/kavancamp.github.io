@@ -12,6 +12,7 @@
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-image: url("../../assets/background.jpeg");
 }
 
@@ -23,7 +24,7 @@
 }
 
 .back-form {
-  max-width: 380px;
+  max-width: 580px;
   width: 100%;
   margin: 0 auto;
   padding-top: 30px;
@@ -31,7 +32,7 @@
 }
 
 .central-form form {
-  width: auto;
+  width: 800px;
   box-shadow: 0 0 2px 1px white;
   display: flex;
   color: #111;
@@ -39,6 +40,7 @@
   justify-content: center;
   flex-direction: column;
   margin-top: -52px;
+  padding-left: 50x;
   opacity: 0.9;
   background-color: white;
   box-shadow: 0 0px 20px -2px #1f2235;
