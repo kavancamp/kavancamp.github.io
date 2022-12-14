@@ -72,15 +72,17 @@ export default function Contact(props) {
           <h2 className="title">
             <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} />
           </h2>{" "}
-          <a href="https://www.linkedin.com/in/keenah-vancampenhout/">
-            <i className="fa fa-linkedin-square"></i>
-          </a>
-          <a href="https://github.com/kavancamp">
-            <i className="fa fa-github-square"></i>
-          </a>
-          <a href="https://www.facebook.com/keenah.vancampenhout/">
-            <i className="fa fa-facebook-square"></i>
-          </a>
+          <div className="colz-icon">
+            <a href="https://www.linkedin.com/in/keenah-vancampenhout/">
+              <i className="fa fa-linkedin-square"></i>
+            </a>
+            <a href="https://github.com/kavancamp">
+              <i className="fa fa-github-square"></i>
+            </a>
+            <a href="https://www.facebook.com/keenah.vancampenhout/">
+              <i className="fa fa-facebook-square"></i>
+            </a>
+          </div>
         </div>
         <div className="back-form">
           <form id="contact-form" ref={form} onSubmit={submitForm}>
