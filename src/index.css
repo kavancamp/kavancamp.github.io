@@ -100,11 +100,6 @@ body ::-webkit-scrollbar-thumb {
   font-size: 12px;
   background-color: #1f2235;
 }
-/* @media only screen and (max-width: 414px) {
-  .primary-btn {
-    font-size: 13px;
-  }
-} */
 
 .primary-btn:hover {
   color: aliceblue;
@@ -114,16 +109,9 @@ body ::-webkit-scrollbar-thumb {
 
 .highlighted-btn {
   color: var(--white);
-
   font-size: 12px;
   background-color: #ff5823;
 }
-@media only screen and (max-width: 568px) {
-  .highlighted-btn {
-    z-index: -900;
-  }
-}
-
 .red-border {
   border: 1px solid var(--error-message) !important;
 }
@@ -132,4 +120,10 @@ body ::-webkit-scrollbar-thumb {
   opacity: 0;
   transform: translateY(80px);
   transition: all 0.8s ease;
+}
+@media screen and (max-width: 390) {
+  body {
+    width: 370px;
+    overflow-x: hidden;
+  }
 }
