@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px 0 0 0;
+  margin: 30px 0 0 0;
 }
 .about-parent {
   max-width: 1000px;
@@ -22,18 +22,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
- 
 }
 .about-details {
   width: 48%;
-  text-align: justify;
-  padding: 30px;
+  text-align: left;
+  padding: 60px;
+  overflow: auto;
 }
 .about-description {
   font-size: 12px;
 }
 .about-highlights {
-  margin: 80px 0;
+  margin: 60px 0;
 }
 .highlght-heading {
   font-family: "Poppins Bold";
@@ -50,7 +50,7 @@
   height: 12px;
   width: 12px;
   margin: 0 10px 0 0;
-  background-color: rgb(205,122, 0);
+  background-color: rgb(205, 122, 0);
   border-radius: 50%;
 }
 /*IPAD PRO RESPONSIVENESS*/
@@ -67,24 +67,45 @@
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 466px) {
-  .about-me-options {
-    display: flex;
-    flex-direction: column;
-  }
-  .about-me-options .highlighted-btn {
-    margin: 0  !important;
-  }
   .about-card {
     display: flex;
     height: 400px;
     width: 400px;
   }
-  .about-details{
+  .about-details {
     overflow: auto;
+    padding: 5px;
   }
-  .about-options .btn{
-    display: none;
+}
+@media screen and (max-width: 390px) {
+  .about-parent {
+    width: 350px;
+    margin-right: 25px;
+    align-items: center;
+  }
+  .about-description {
+    padding-top: 10px;
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .about-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .about-parent {
+    width: 414px;
+    padding: 5px;
+  }
+  .about-me-options button {
+    width: 100%;
+  }
+  .about-card {
+    display: flex;
+    height: 400px;
+    overflow: auto;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -93,7 +114,7 @@
     flex-direction: column;
   }
   .about-me-options .highlighted-btn {
-    margin: 24px 0 0 0 !important;
+    margin: 5px 0 0 0 !important;
   }
   .about-me-options button {
     width: 100%;
