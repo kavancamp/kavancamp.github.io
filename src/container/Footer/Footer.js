@@ -1,16 +1,12 @@
 import React from "react";
 import "./Footer.css";
-import ScrollService from "../../utilities/ScrollService";
+//import ScrollService from "../../utilities/ScrollService";
 export default function Footer() {
   return (
     <div className="scroll-container">
-      <button
-        className="btn-scroll"
-        onClick={() => ScrollService.scrollHandler.scrollToHome()}
-      >
-        {" "}
+      <a href="#top" className="btn-scroll btn">
         <i className="fa fa-arrow-up"></i>
-      </button>
+      </a>
     </div>
   );
 }
