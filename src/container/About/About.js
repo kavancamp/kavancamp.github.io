@@ -15,15 +15,15 @@ export default function About(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "Full-Stack Engineer with knowledge of MERN stacks with redux, a knack of building applications with utmost efficiency. Strong professional, ready to be an asset for an organization.",
+      "A passionate Full-Stack Engineer with a focus on MERN stack, ready to be an asset for an organization I can learn and grow with.",
     highlights: {
       bullets: [
         "Full Stack web and mobile development",
         "Interactive Front End",
         "React",
-        "Redux for State Management",
+        "Redux",
         "REST API",
-        "Managing databases",
+        "Database Management",
       ],
       heading: "A Few Highlights:",
     },
