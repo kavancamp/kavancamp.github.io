@@ -1,6 +1,6 @@
 .main-container {
   min-height: 100vh;
-  margin: 100px 0 -450px 0;
+  margin: 100px 0 -430px 0;
 }
 
 .central-form {
@@ -24,12 +24,9 @@
 
 .back-form {
   max-width: 380px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 30px;
-}
-
-.back-form {
-  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -51,7 +48,7 @@
 form p {
   text-align: center;
   margin-bottom: 10px;
-  color: rgb(205,122, 0);
+  color: rgb(205, 122, 0);
   letter-spacing: 0.1rem;
   font-family: "Poppins Bold";
 }
@@ -90,13 +87,13 @@ form button {
   outline: none;
   width: 900px;
   color: rgb(230, 227, 227);
-  border: 2px solid rgb(205,122, 0);
+  border: 2px solid rgb(205, 122, 0);
   font-size: 12px;
   border-radius: 19px;
   background-color: #1f2235;
   font-size: 18px;
   width: 160px;
-  align-items: center;
+  align-items: space-between;
   justify-content: center;
 }
 
@@ -106,19 +103,25 @@ form button:hover {
   border: 2px solid #1f2235;
 }
 
-button .load {
+button {
   width: 100%;
 }
-
+.send-buttorn {
+  padding: 10px;
+}
 button .load img {
   width: 60px;
   color: green;
 }
-.col i {
-  padding: 7px;
-  color: #fff;
+
+.colz-icon i {
+  color: white;
+  height: 25px;
+  width: 25px;
+  padding: 8px;
+  padding-left: 0px;
 }
-.col i:hover {
+.colz .colz-icon:hover {
   transform: scale(1.5);
 }
 
@@ -130,13 +133,12 @@ button .load img {
     justify-content: space-between;
     margin-top: 30px;
   }
-
-  form {
+  .form {
     flex: 0.9;
   }
 }
-@media screen and (max-width: 810px){
-  .back-form{
+@media screen and (max-width: 810px) {
+  .back-form {
     padding-top: 50px;
   }
 }
@@ -144,7 +146,19 @@ button .load img {
   .central-form h2 {
     font-size: 16px;
   }
-  .back-form{
+  .back-form {
     padding-top: 60px;
+  }
+}
+@media screen and (max-width: 390x) {
+  .central-form {
+    padding-right: 35px;
+    max-width: 350px;
+  }
+  .back-form {
+    width: 350px;
+  }
+  .fa {
+    font-size: 20px;
   }
 }
